@@ -1,6 +1,13 @@
 import "./Logo.css";
 import React from "react";
+import logo from "../../assets/logoE.png";
 
 export default (props) => {
-  return <aside className="logo">Logo</aside>;
+  return (
+    <aside className="logo">
+      <a href="/" className="logo">
+        <img src={logo} alt="Logo" />
+      </a>
+    </aside>
+  );
 };
